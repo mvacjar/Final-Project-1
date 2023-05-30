@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eat Healthy With Me</title>
+    <style>
+      body {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/970/original/azulejos.jpeg?1670440836");
+        background-size: 50%;
+      }
+      #whole {
+        color: rgb(0, 0, 0);
+        background-image: linear-gradient(to top, #fefcfcdd 0%, #ffffffdd 100%);
+        border-radius: 40px;
+        box-shadow: rgba(29, 29, 82, 0.697) 0px 8px 8px 0;
+        font-family: "Georgia", Times New Roman, Times, serif;
+        margin: 30px auto;
+        padding: 30px;
+        width: 50%;
+      }
+      h1 {
+        color: rgb(42, 115, 216);
+        font-size: 45px;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-thickness: 2.5px;
+        font-style: italic;
+        text-shadow: 3px 3px #37345f1c;
+        margin: 0 auto;
+      }
+      .andalusian {
+        font-size: 20px;
+        font-weight: lighter;
+        text-align: center;
+        padding: 5px 0px;
+        text-shadow: 1.5px 1.5px #37345f2d;
+      }
+      .salmorejo-img {
+        display: block;
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 90%;
+        padding: 0px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      hr {
+        border-top: 3px solid rgb(42, 115, 216);
+        margin-top: -15px;
+      }
+      h4 {
+        font-size: 17px;
+        font-style: italic;
+        font-weight: lighter;
+        margin-bottom: -8px;
+        padding-left: 5px;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+      }
+      .list {
+        font-size: 17px;
+        list-style-type: none;
+        padding-inline-start: 2ch;
+      }
+      .ingr-amount {
+        font-weight: bold;
+      }
+      p {
+        font-size: 17px;
+        line-height: 1.15;
+        padding-left: 20px;
+        padding-right: 5px;
+        text-align: justify;
+      }
+      .ref {
+        color: rgb(36, 96, 181);
+        font-size: 17px;
+        line-height: 1.15;
+        text-align: center;
+        text-decoration: none;
+      }
+      button {
+        background: rgb(42, 115, 216);
+        border: 1px solid rgb(206, 241, 246);
+        border-radius: 30px;
+        box-shadow: rgba(27, 29, 89, 0.08) 0px 8px 8px 0;
+        color: #ffffff;
+        cursor: pointer;
+        display: block;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 18px 24px;
+        text-align: center;
+        margin: 40px auto;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: rgb(42, 115, 216);
+        background: #ffffff;
+        opacity: 1;
+      }
+      form {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: -10px;
+      }
+      #report-upload-form label {
+        border-radius: 30px;
+        display: inline-flexbox;
+        width: 300px;
+        margin: 0 auto;
+        padding: 0;
+      }
+      #report-upload-form input[type="text"],
+      #report-upload-form input[type="file"],
+      #report-upload-form textarea {
+        width: 360px;
+      }
+      #id_comment {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 14px;
+        margin: 5px;
+        padding: 5px;
+      }
+      .coded {
+        text-align: center;
+        font-family: monospace;
+        font-style: italic;
+        color: #afafaf;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="whole">
+      <h1>Salmorejo</h1>
+      <h3 class="andalusian"><em>An Andalusian Recipe</em></h3>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/489/original/salmorejo.png?1670233952"
+        class="salmorejo-img"
+      />
+      <h2 class="Ingredients">Ingredients</h2>
+      <hr />
+      <h4>6 dinner guests</h4>
+      <ul class="list" role="list">
+        <li>
+          <span class="ingr-name">Tomatoes</span>
+          <span class="ingr-amount" style="padding-left: 235px">1 kg</span>
+        </li>
+        <li>
+          <span class="ingr-name">Bread</span>
+          <span class="ingr-amount" style="padding-left: 248px">200 g</span>
+        </li>
+        <li>
+          <span class="ingr-name">Extra Virgin Olive Oil</span>
+          <span class="ingr-amount" style="padding-left: 122px">150 ml</span>
+        </li>
+        <li>
+          <span class="ingr-name">Gloves of garlic</span>
+          <span class="ingr-amount" style="padding-left: 218px">1</span>
+        </li>
+        <li>
+          <span class="ingr-name">Boiled Egg</span>
+          <span class="ingr-amount" style="padding-left: 212px">200 g</span>
+        </li>
+        <li>
+          <span class="ingr-name">Jamon Iberico</span>
+          <span class="ingr-amount" style="padding-left: 184px">200 g</span>
+        </li>
+        <li>
+          <span class="ingr-name">Salt</span>
+        </li>
+      </ul>
+      <h2>Let's do it!</h2>
+      <hr />
+      <p class="description">
+        When I cook salmorejo, I like mixing
+        <strong>each ingredient one by one</strong> to get the perfect texture.
+        So let's start washing tomatoes and taking off the stems. We don't need
+        to peel them or take the seeds because, after all, we are going to
+        strain them. <strong>Mix it and try to get the smoothest cream</strong>
+        possible and stain it in a big bowl.
+      </p>
+      <p>
+        Add the bread, which should already be cut into slices, to the big bowl
+        with the tomato cream.
+        <strong>Let the bread soak into the mix</strong> for 10 minutes so it
+        gets soft. After that,
+        <strong>add everything else and the glove of garlic</strong> to the
+        mixer and mix it. At this point, you will get a thick texture, but if
+        you prefer it thicker, add a little bit more bread. The texture depends
+        on the tomatoes used and the type of bread, of course. Here is a trick:
+        use good baking bread and plum tomatoes.
+      </p>
+      <p>
+        The next step is to
+        <strong>add the salt and the extra virgin olive oil</strong>. Turn on
+        the mixer with the pure in and add the oil little by little to get the
+        perfect emulsion. Have patience until you get a uniform emulsion
+        texture. The colour should be a nice orange tone and compact enough, so
+        when we add the chunks of boiled egg and jamon they will keep over the
+        surface. Plate the dish in a beautiful bowl and
+        <strong
+          >serve it with a little bit of boiled egg, jamon, and a line of oil to
+          decorate it</strong
+        >.
+      </p>
+      <p>
+        It's done! Easy peasy lemon squeezy, right? It's super delicious and
+        healthy! Tell me about your experience of cooking this Spanish dish and
+        what you think about it! And if you want to know more about its history,
+        <a href="https://en.wikipedia.org/wiki/Salmorejo" class="ref"
+          >click me to know more about it!</a
+        >
+      </p>
+      <br />
+      <hr />
+      <form
+        id="report-upload-form"
+        method="POST"
+        action=""
+        enctype="multipart/form-data"
+      >
+        <label for="id_comment"
+          ><div>Write your impressions right here! 😊</div>
+        </label>
+        <textarea id="id_comment" rows="10" cols="0" name="comment"> </textarea>
+      </form>
+
+      <button>Send your Comment! 🤗</button>
+      <div class="coded">Coded by Maryuxy</div>
+    </div>
+    <script>
+      function greet() {
+        let country = prompt("Where do you come from?");
+
+        country = country.toLowerCase().trim();
+
+        if (country === "spain") {
+          alert(
+            "What are you doing here 😅? You should know how to do this recipe!"
+          );
+        } else {
+          alert("Cool! I hope you enjoy this recipe! 😊");
+        }
+      }
+
+      greet();
+
+      function update(newLabel) {
+        let form = document.querySelector("form");
+        form.innerHTML = newLabel;
+      }
+
+      function keep(stillWritting) {
+        let label = document.querySelector("label");
+        label.innerHTML = stillWritting;
+      }
+
+      function send() {
+        let name = prompt("What is your name?");
+        let warning = prompt("Do you want to write something more?");
+
+        warning = warning.toLowerCase().trim();
+
+        if (warning === "yes") {
+          keep("You still have some lines to write " + name + ", continue! 🤩");
+        } else {
+          update(
+            "Thank you for sending your comments " +
+              name +
+              ". Have a nice day ☀️"
+          );
+        }
+      }
+
+      let sendComment = document.querySelector("button");
+      sendComment.addEventListener("click", send);
+    </script>
+  </body>
+</html>
